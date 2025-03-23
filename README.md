@@ -54,11 +54,8 @@ g++ \-O3 \<filename\>.cpp \-o \<output\_filename\>.out
 
 ### Sample Program Input
 
-Example for Bron-Kerbosch
-
-Example for Tomita
-
-Example for Arboricity
+After you run the program it will ask for the relative file path of the input file.
+Make sure to give the correct path and that the first line contains the Number of Vertices and Number of Edges which are separated by a space.
 
 ### Webpage and cleaned dataset link
 
