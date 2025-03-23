@@ -124,27 +124,42 @@
                 <tr>
                     <td>Sthitaprajna</td>
                     <td>2021B3A71082H</td>
-                    <td></td>
+                    <td>Contributed to the implementation of the CLIQUES algorithm based on the Tomita et al. (2006) paper
+                        Implemented Arboricity based algorithm based on the Chiba et al. (1985) paper
+                        </td>
                 </tr>
                 <tr>
                     <td>Kushagra Mishra</td>
                     <td>2021B5A72970H</td>
-                    <td></td>
+                    <td>Contributed to the implementation of the CLIQUES algorithm based on the Tomita et al. (2006) paper
+                        Contributed to the implementation of the Bron-Kerbosch algorithm based on the Eppstein et al. (2006) paper
+                        </td>
                 </tr>
                 <tr>
                     <td>Riya Agrawal</td>
                     <td>2021B3A70996H</td>
-                    <td></td>
+                    <td>Implemented Arboricity based algorithm based on the Chiba et al. (1985) paper
+                        Helped develop and host the website 
+                        
+                        </td>
                 </tr>
                 <tr>
                     <td>Dhruv Choudhary</td>
                     <td>2021B3A73142H</td>
-                    <td></td>
+                    <td>Contributed in implementing the arboricity based algorithm based on the Chiba et al. (1985) paper
+                        Authored the report
+                        
+                        
+                    </td>
                 </tr>
                 <tr>
                     <td>Waleed Iqbal Shaikh</td>
-                    <td>2021B3A7</td>
-                    <td></td>
+                    <td>2021B3A70559</td>
+                    <td>
+                        Contributed to the implementation of the Bron-Kerbosch algorithm based on the Eppstein et al. (2006) paper
+Helped develop and host the website 
+
+                    </td>
                 </tr>
             </table>
         </div>
@@ -195,7 +210,88 @@
             <!-- Arboricity Section -->
             <div id="arboricity" class="algorithm-content">
                 <h2>Arboricity Algorithm</h2>
-                <p>Description of the Arboricity algorithm goes here.</p>
+                <p>This procedure focuses on listing all cliques of a given order k in a graph. It leverages the graph's arboricity, which is the minimum number of edge-disjoint spanning forests needed to cover the graph. The algorithm runs in time 
+                    O(a(G)^k−2⋅m) , where a(G) is the arboricity and m is the number of edges.</p>
+                <h3>Skitter Dataset Results</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Maximum Clique Size</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>Total Maximal Cliques Found</td>
+                        <td>37322355</td>
+                    </tr>
+                    <tr>
+                        <td>Execution Time</td>
+                        <td>25233 milliseconds</td>
+                    </tr>
+                </table>
+
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                    <h3>Skitter Clique Size Distribution</h3>
+                    <canvas id="aSkitterChart"></canvas>
+                </div>
+           
+             <!-- Wiki Dataset Results -->
+             <h3>Wiki Dataset Results</h3>
+             <table>
+                 <tr>
+                     <th>Metric</th>
+                     <th>Value</th>
+                 </tr>
+                 <tr>
+                     <td>Maximum Clique Size</td>
+                     <td>17</td>
+                 </tr>
+                 <tr>
+                     <td>Total Maximal Cliques Found</td>
+                     <td>459002</td>
+                 </tr>
+                 <tr>
+                     <td>Execution Time</td>
+                     <td>141966 milliseconds</td>
+                 </tr>
+             </table>
+
+             <!-- Clique Size Distribution Graph -->
+             <div class="graph-container">
+                 <h3>Wiki-Vote Clique Size Distribution</h3>
+                 <canvas id="awikiChart"></canvas>
+             </div>
+
+            
+                <!-- Email-Enron Dataset Results -->
+                <h3>Email-Enron Dataset Results</h3>
+                <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Maximum Clique Size</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Total Maximal Cliques Found</td>
+                    <td>226859</td>
+                </tr>
+                <tr>
+                    <td>Execution Time</td>
+                    <td>727000  milliseconds</td>
+                </tr>
+                </table>
+            
+                <!-- Clique Size Distribution Graph -->
+             <div class="graph-container">
+                <h3>Email-Enron Clique Size Distribution</h3>
+                <canvas id="aemailChart"></canvas>
+             </div>
             </div>
 
             <!-- Bron-Kerbosch Section -->
@@ -226,7 +322,7 @@
 
                 <!-- Clique Size Distribution Graph -->
                 <div class="graph-container">
-                    <h3>Clique Size Distribution</h3>
+                    <h3>Skitter Clique Size Distribution</h3>
                     <canvas id="bornSkitterChart"></canvas>
                 </div>
            
@@ -253,7 +349,7 @@
 
              <!-- Clique Size Distribution Graph -->
              <div class="graph-container">
-                 <h3>Clique Size Distribution</h3>
+                 <h3>Wiki-Vote Clique Size Distribution</h3>
                  <canvas id="bornwikiChart"></canvas>
              </div>
 
@@ -281,7 +377,7 @@
             
                 <!-- Clique Size Distribution Graph -->
              <div class="graph-container">
-                <h3>Clique Size Distribution</h3>
+                <h3>Email-Enron Clique Size Distribution</h3>
                 <canvas id="bornemailChart"></canvas>
              </div>
             </div>
@@ -313,7 +409,7 @@
 
                 <!-- Clique Size Distribution Graph -->
                 <div class="graph-container">
-                    <h3>Clique Size Distribution</h3>
+                    <h3>Skitter Clique Size Distribution</h3>
                     <canvas id="tomitaSkitterChart"></canvas>
                 </div>
                 <!--  Wiki Dataset Results -->
@@ -338,7 +434,7 @@
                 </table>
                   <!-- Clique Size Distribution Graph -->
                   <div class="graph-container">
-                    <h3>Clique Size Distribution</h3>
+                    <h3>Wiki-vote Clique Size Distribution</h3>
                     <canvas id="tomitawikiChart"></canvas>
                 </div>
                 <!--  Email Dataset Results -->
@@ -363,59 +459,132 @@
                 </table>
                   <!-- Clique Size Distribution Graph -->
                   <div class="graph-container">
-                    <h3>Clique Size Distribution</h3>
+                    <h3>Email-Enron Clique Size Distribution</h3>
                     <canvas id="tomitaemailChart"></canvas>
                 </div>
 
             </div>
         </div>
     </div>
+   
+
 
     <script>
-        function createHistogram(canvasId, labels, data) {
-            var ctx = document.getElementById(canvasId).getContext('2d');
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Time in seconds ',
-                        data: data,
-                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                        borderColor: 'rgba(75, 192, 192, 1)',
-                        borderWidth: 1
-                    }]
+       function createHistogram(canvasId, labels, data) {
+    var ctx = document.getElementById(canvasId).getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Time in seconds',
+                data: data,
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Agorithm '  // X-axis label
+                    }
                 },
-                options: {
-                    scales: {
-                        y: { beginAtZero: true }
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Seconds'  // Y-axis label
                     }
                 }
-            });
+            }
         }
+    });
+}
 
+function createHistogra(canvasId, labels, data) {
+    var ctx = document.getElementById(canvasId).getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Time in seconds',
+                data: data,
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Clique Size'  // X-axis label
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Number of Cliques'  // Y-axis label
+                    }
+                }
+            }
+        }
+    });
+}
+const skitterLabels = Array.from({length: 66}, (_, i) => i + 1);
+        const skitterData = [2319807, 3171609, 1823321, 939336, 684873, 598284, 588889, 608937, 665661, 728098, 798073, 877282, 945194, 980831, 939987, 839330, 729601, 639413, 600192, 611976, 640890, 673924, 706753, 753633, 818353, 892719, 955212, 999860, 1034106, 1055653, 1017560, 946717, 878552, 809485, 744634, 663650, 583922, 520239, 474301, 420796, 367879, 321829, 275995, 222461, 158352, 99522, 62437, 39822, 30011, 25637, 17707, 9514, 3737, 2042, 1080, 546, 449, 447, 405, 283, 242, 146, 84, 49, 22, 4];
+        createHistogra('tomitaSkitterChart', skitterData, skitterLabels);
         // Datasets Section Graphs (unchanged)
         createHistogram('enronChart', ['Bron', 'Tomita', 'Arboricity'], [56.641, 2.762, 727]);
-        createHistogram('wikiChart', ['Bron', 'Tomita', 'Arboricity'], [83.155, 4.036, 547.3]);
-        createHistogram('skitterChart', ['Bron', 'Tomita', 'Arboricity'], [0,683.360,0]);
-
-        // Tomita Algorithm - Skitter Dataset Graph
-        const skitterLabels = Array.from({length: 66}, (_, i) => i + 1);
-        const skitterData = [2319807, 3171609, 1823321, 939336, 684873, 598284, 588889, 608937, 665661, 728098, 798073, 877282, 945194, 980831, 939987, 839330, 729601, 639413, 600192, 611976, 640890, 673924, 706753, 753633, 818353, 892719, 955212, 999860, 1034106, 1055653, 1017560, 946717, 878552, 809485, 744634, 663650, 583922, 520239, 474301, 420796, 367879, 321829, 275995, 222461, 158352, 99522, 62437, 39822, 30011, 25637, 17707, 9514, 3737, 2042, 1080, 546, 449, 447, 405, 283, 242, 146, 84, 49, 22, 4];
-        createHistogram('tomitaSkitterChart', skitterData, skitterLabels);
+        createHistogram('wikiChart', ['Bron', 'Tomita', 'Arboricity'], [83.155, 4.036, 141.96]);
+        createHistogram('skitterChart', ['Bron', 'Tomita', 'Arboricity'], [0,683.360,252.3]);
         const wikiLabels = Array.from({length: 66}, (_, i) => i + 1);
         const wikiData = [8655, 13718, 27292, 48416, 68872, 83266, 76732, 54456, 35470, 21736, 11640, 5449, 2329, 740, 208, 23];
-        createHistogram('tomitawikiChart', wikiData, wikiLabels);
+        createHistogra('tomitawikiChart', wikiData, wikiLabels);
         const emailLabels=Array.from({length: 66}, (_, i) => i + 1);
         const emailData=[14070, 7077, 13319, 18143, 22715, 25896, 24766, 22884, 21393, 17833, 15181, 11487, 7417, 3157, 1178, 286, 41, 10, 6];
-        createHistogram('tomitaemailChart',emailData,emailLabels)
+        //born algo
+        createHistogra('tomitaemailChart',emailData,emailLabels)
         const wikiL=Array.from({length: 66}, (_, i) => i + 1);
         const wikiD=[8655, 13718, 27292, 48416, 68872, 83266, 76732, 54456, 35470, 21736, 11640, 5449, 2329, 740, 208, 23];
-        createHistogram('bornwikiChart',wikiD,wikiL)
+        createHistogra('bornwikiChart',wikiD,wikiL)
         const emailL=Array.from({length: 66}, (_, i) => i + 1);
         const emailD=[14070, 7077, 13319, 18143, 22715, 25896, 24766, 22884, 21393, 17833, 15181, 11487, 7417, 3157, 1178, 286, 41, 10, 6];
-        createHistogram('bornemailChart',emailD,emailL)
+        createHistogra('bornemailChart',emailD,emailL)
+        const skitterL=Array.from({length: 66}, (_, i) => i + 1);
+        const skitterD=[2319807, 3171609, 1823321, 939336, 684873, 598284, 588889, 608937, 665661, 728098, 798073, 877282, 945194, 980831, 939987, 839330, 729601, 639413, 600192, 611976, 640890, 673924, 706753, 753633, 818353, 892719, 955212, 999860, 1034106, 1055653, 1017560, 946717, 878552, 809485, 744634, 663650, 583922, 520239, 474301, 420796, 367879, 321829, 275995, 222461, 158352, 99522, 62437, 39822, 30011, 25637, 17707, 9514, 3737, 2042, 1080, 546, 449, 447, 405, 283, 242, 146, 84, 49, 22, 4];
+        createHistogra('bornSkitterChart',skitterD,skitterL)
 
+        //a algo 
+        const skitterl=Array.from({length: 66}, (_, i) => i + 1);
+        const skiiterd=[
+    2319807, 3171609, 1823321, 939336, 684873, 598284, 588889, 608937, 665661, 728098,
+    798073, 877282, 945194, 980831, 939987, 839330, 729601, 639413, 600192, 611976,
+    640890, 673924, 706753, 753633, 818353, 892719, 955212, 999860, 1034106, 1055653,
+    1017560, 946717, 878552, 809485, 744634, 663650, 583922, 520239, 474301, 420796,
+    367879, 321829, 275995, 222461, 158352, 99522, 62437, 39822, 30011, 25637,
+    17707, 9514, 3737, 2042, 1080, 546, 449, 447, 405, 283,
+    242, 146, 84, 49, 22, 4];
+        createHistogra('aSkitterChart',skiiterd,skitterl);
+        const wikil=Array.from({length: 66}, (_, i) => i + 1);
+        const wikid=[8655, 13718, 27292, 48416, 68872, 83266, 76732, 54456, 35470, 21736, 11640, 5449, 2329, 740, 208, 23];
+        createHistogra('awikiChart',wikid,wikil);
+        const emaill=Array.from({length: 66}, (_, i) => i + 1);
+        const emaild=[
+    14070, 7077, 13319, 18143, 22715, 25896, 24766, 22884, 21393, 17833,
+    15181, 11487, 7417, 3157, 1178, 286, 41, 10, 6
+];
+        createHistogra('aemailChart',emaild,emaill)
+        createHistogra('askitterChart',emaild,emaill);
+        // Tomita Algorithm - Skitter Dataset Graph
+        
+       
 
     </script>
 </body>
